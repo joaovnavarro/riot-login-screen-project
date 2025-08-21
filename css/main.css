@@ -79,6 +79,7 @@ input[type="text"]:focus-within
     font-weight: bold;
     text-transform: uppercase;
     color: rgb(74, 74, 74, 0.9);
+    cursor: text;
 
     transition: 0.1s ease all;
 }
