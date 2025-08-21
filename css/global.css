@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-family:'Lato', sans-serif;
+    --bg-color: #f7f7f7;
+}
+
+body {
+    background-color: black;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#window {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "main aside aside aside";
+
+    height: 85vh;
+    width: 80%;
+    margin-block: 3%;
+}
