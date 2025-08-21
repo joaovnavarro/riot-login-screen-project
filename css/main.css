@@ -91,3 +91,29 @@ input[type="password"]:not(:placeholder-shown) + label {
     font-size: 11px;
     color: #000;
 }
+
+#other-login {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    /* border: 1px solid pink; */
+    margin-top: 30px;
+    button {
+        display: inline-block;
+        all: none;
+        border: none;
+        box-sizing: border-box;
+        height: 32px;
+        width: 100%;
+        border-radius: 6px;
+        overflow: hidden;
+        object-fit: cover;
+        
+        cursor: pointer;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
