@@ -51,8 +51,7 @@ input[type="password"] {
     font-family: var(--font-family);
     /* font-size: 12px; */
 }
-
-    
+ 
 input[type="text"]:hover,
 input[type="password"]:hover {
     background-color: #d9d9d9;
@@ -63,4 +62,32 @@ input[type="text"]:focus-within
 ,input[type="password"]:focus-within {
     border: 2px solid #000;
     background-color: var(--bg-color);
+}
+
+label {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+
+    height: 50px;
+    left: 12px;
+
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(74, 74, 74, 0.9);
+
+    transition: 0.1s ease all;
+}
+   
+input[type="text"]:focus-within + label
+,input[type="password"]:focus-within + label,
+input[type="text"]:not(:placeholder-shown) + label,
+input[type="password"]:not(:placeholder-shown) + label {
+    top: -13px;
+    font-size: 11px;
+    color: #000;
 }
