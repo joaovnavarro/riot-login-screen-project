@@ -7,7 +7,7 @@ main {
     display: flex;
     width: 100%;
     height: 20%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     justify-content: center;
     align-items: center;
     img {
@@ -19,7 +19,7 @@ form {
     box-sizing: border-box;
     height: 65%;
     margin: 0 20px 20px 20px;
-    border: 1px solid violet;
+    /* border: 1px solid violet; */
 }
 
 .input-wrapper {
@@ -64,7 +64,7 @@ input[type="text"]:focus-within
     background-color: var(--bg-color);
 }
 
-label {
+.input-wrapper label {
     position: absolute;
     inset: 0;
     display: flex;
@@ -115,5 +115,41 @@ input[type="password"]:not(:placeholder-shown) + label {
             height: 100%;
             object-fit: cover;
         }
+    }
+}
+
+#checkbox-wrapper {
+    display: flex;
+    position: relative;
+    margin-top: 20px;
+    box-sizing: border-box;
+    width: max-content;
+    gap: 6px;
+
+    /* background-color: aquamarine; */
+    /* cursor: pointer; */
+
+    font-family: var(--font-family);
+    font-size: .8rem;
+    /* text-align: center; */
+
+    .checkbox-image {
+        width: 16px;
+        height: 16px;
+        border-radius: 2px;
+        background-image: url(../assets/checkbox-default.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    input {
+        appearance: none;
+        position: absolute;
+        inset: 0;
+        cursor: pointer;
+    }
+
+    input:checked ~ .checkbox-image {
+        background-image: url(../assets/checkbox-checked.svg);
     }
 }
