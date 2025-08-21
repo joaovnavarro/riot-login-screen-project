@@ -126,7 +126,6 @@ input[type="password"]:not(:placeholder-shown) + label {
     width: max-content;
     gap: 6px;
 
-    /* background-color: aquamarine; */
     /* cursor: pointer; */
 
     font-family: var(--font-family);
@@ -152,4 +151,34 @@ input[type="password"]:not(:placeholder-shown) + label {
     input:checked ~ .checkbox-image {
         background-image: url(../assets/checkbox-checked.svg);
     }
+}
+
+#action-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 100%;
+
+    & button {
+        appearance: none;
+        border: 1px solid rgba(0, 0, 0, 0.07);
+        height: 64px;
+        width: 64px;
+        margin-top: 57%;
+        /* background-color: transparent; */
+        border-radius: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+form:valid button {
+  pointer-events: visible;
+  cursor: pointer;
+  background: url(../assets/action-wv.svg);
+}
+
+button:disabled {
+    background: url(../assets/action-wtv.svg);
+    pointer-events: none;
 }

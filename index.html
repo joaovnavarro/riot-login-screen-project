@@ -18,11 +18,11 @@
             <form action="">
                 <div id="login">
                     <div class="input-wrapper">
-                        <input type="text" name="username" id="username" placeholder=" ">
+                        <input type="text" name="username" id="username" placeholder=" " required>
                         <label for="username" class="no-copy">Nome de Usuário</label>
                     </div>
                     <div class="input-wrapper">
-                        <input type="password" name="password" id="password" placeholder=" ">
+                        <input type="password" name="password" id="password" placeholder=" " required>
                         <label for="password" class="no-copy">Senha</label>
                     </div>
                     <div id="other-login">
@@ -46,6 +46,10 @@
                         <input type="checkbox" name="remember" id="remember">
                         <div class="checkbox-image"></div>
                         <label for="remember">Manter login</label>
+                    </div>
+                    <div id="action-wrapper">
+                        <button type="submit" disabled>
+                        </button>
                     </div>
                 </div>
             </form>
