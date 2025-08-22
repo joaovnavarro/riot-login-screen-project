@@ -1,0 +1,9 @@
+aside {
+    grid-area: aside;
+    background:
+    linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.9) 100%),
+    linear-gradient(to right, transparent 90%, rgba(0, 0, 0, 0.9) 100%),
+    url(../assets/background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
