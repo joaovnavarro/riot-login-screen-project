@@ -62,7 +62,7 @@
                 <p class="no-copy">ESTE APLICATIVO E PROTEGIDO POR HCAPTCHA.<br> A <a href="https://www.hcaptcha.com/privacy" target="_blank">POLÍTICA DE PRIVACIDADE</a> E OS <a href="https://www.hcaptcha.com/terms" target="_blank">TERMOS DE SERVIÇO</a> SÃO APLICÁVEIS.</p>
             </div>
         </main>
-        <aside>
+        <aside class="no-copy">
             <div class="fake-window-buttons">
                 <button class="btn-minimize">
                     <span>-</span>
@@ -72,9 +72,10 @@
                 </button>
             </div>
             <div class="user">
-                <button class="user-button">
-                    <img src="assets/user-24.png" alt="Ícone de Usuário">
-                </button>
+                <input type="checkbox" id="toggle-user">
+                <label for="toggle-user" class="user-button">
+                    <img src="assets/user-24.png" alt="Ícone de usuário">
+                </label>
                 <div class="useroptions">
                     <button class="options">Configurações</button>
                     <button class="options fake-disabled">Encerrar sessão</button>

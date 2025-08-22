@@ -83,6 +83,19 @@ aside {
     /* background-color: aquamarine; */
     justify-content: center;
     align-items: end;
+
+    & input {
+        display: none;
+    }
+
+    & label:hover, input:checked + label  {
+        background-color: #3A3A3A;
+        cursor: pointer;
+    }
+
+    & input:checked ~ .useroptions {
+        display: flex;
+    }
 }
 
 .user-button {
@@ -98,14 +111,10 @@ aside {
     background-color: black;
 
     transition: 0.2s ease;
-
-    &:hover, &:focus {
-        background-color: #3A3A3A;
-    }
 }
 
 .useroptions {
-    display: flex;
+    display: none;
     flex-direction: column;
     /* width: max-content; */
     width: 245px;
