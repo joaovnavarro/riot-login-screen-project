@@ -7,3 +7,69 @@ aside {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.fake-window-buttons {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 7px;
+
+    & button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        appearance: none;
+        border: none;
+        background-color: transparent;
+
+        width: 35px;
+        height: 25px;
+
+        text-align: ;
+
+        & span {
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: center;
+            align-items: center;
+
+            /* font-size: large; */
+            /* font-size: larger; */
+            /* text-transform: uppercase; */
+            /* font-size: 1rem; */
+            font-size: 1rem;
+            color: rgba(255, 255, 255, 0.2);
+        }
+    }
+
+    .btn-close {
+        /* background-color: coral; */
+        &:hover {
+            background-color: #E81123;
+            cursor: pointer;
+
+
+            & span {
+                color: rgba(255, 255, 255, 1);
+            }
+        }
+    }
+
+    .btn-minimize {
+        /* background-color: cyan; */
+
+        & span {
+            margin-top: 1px;
+            font-size: 1.5rem;
+        }
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+
+            & span {
+                color: rgba(255, 255, 255, 1);
+            }
+        }
+    }
+}
