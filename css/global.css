@@ -21,9 +21,10 @@ body {
 
 #window {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 30% 70%;
+    /* grid-template-columns: repeat(4, 1fr); */
     grid-template-areas: 
-    "main aside aside aside";
+    "main aside";
 
     height: 85vh;
     width: 80%;
