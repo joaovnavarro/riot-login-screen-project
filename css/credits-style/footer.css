@@ -1,0 +1,101 @@
+footer {
+    grid-area: footer;
+
+    height: 200px;
+
+    font-family: var(--font-family);
+    color: white;
+    
+    background-color: #252423;
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & section {
+        display: flex;
+        gap: 10px;
+
+        & .riot-social {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: start;
+            align-items: start;
+
+            & a:nth-child(1) {
+                width: 118px;
+                height: 33px;
+                display: flex;
+                margin-left: auto;
+                background-image: url(../../assets/footer/riot-white.webp);
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin-right: auto;
+                opacity: 0.5;
+            }
+
+            & a:nth-child(1):hover {
+                /* background-image: url(../../assets/footer/riot-red.webp); */
+                opacity: 1;
+            }
+            
+            & span {
+                opacity: 0.5;
+            }
+        }
+
+        & .social {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            justify-content: start;
+            align-items: start;
+            margin-left: auto;
+
+            & div {
+                display: flex;
+                gap: 5px;
+
+                & a {
+                    text-decoration: none;
+                    display: inline-block;
+                    height: 33px;
+                    width: 33px;
+                    background-image: var(--icon-default);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+
+                    &.instagram {
+                        --icon-default: url('../../assets/icons/instagram.svg');
+                        --icon-hover: url('../../assets/icons/instagram-hover.svg');
+                    }
+
+                    &.linkedin {
+                        --icon-default: url('../../assets/icons/linkedin.svg');
+                        --icon-hover: url('../../assets/icons/linkedin-hover.svg');
+                    }
+
+                    &.github {
+                        --icon-default: url('../../assets/icons/github.svg');
+                        --icon-hover: url('../../assets/icons/github-hover.svg');
+                    }
+
+                    &:hover {
+                        background-image: var(--icon-hover);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
+                }
+            } 
+
+            & span {
+                display: flex;
+                justify-content: center;
+                opacity: 0.5;
+            }
+                      
+        }
+    }
+}

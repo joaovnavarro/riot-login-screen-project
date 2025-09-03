@@ -96,7 +96,7 @@ input[type="password"]:not(:placeholder-shown) + label {
 
 #other-login {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
     gap: 10px;
     /* border: 1px solid pink; */
     margin-top: 30px;
@@ -162,7 +162,7 @@ input[type="password"]:not(:placeholder-shown) + label {
     height: 100%;
     /* border: 1px solid black; */
 
-    & button {
+    & .fake-submit {
         appearance: none;
         border: 1px solid rgba(0, 0, 0, 0.07);
         height: 64px;
@@ -175,13 +175,13 @@ input[type="password"]:not(:placeholder-shown) + label {
     }
 }
 
-form:valid button {
+form:valid .fake-submit {
   pointer-events: visible;
   cursor: pointer;
   background: url(../assets/action-wv.svg);
 }
 
-button:disabled {
+.fake-submit {
     background: url(../assets/action-wtv.svg);
     pointer-events: none;
 }
