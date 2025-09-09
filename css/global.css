@@ -37,3 +37,21 @@ body {
     -moz-user-select: none;    /* Firefox */
     -ms-user-select: none;     /* Internet Explorer/Edge */
 }
+
+@media (width <= 100rem) {
+    main {
+        zoom: 80%;
+    }
+}
+
+@media (width <= 85.375rem) {
+    main {
+        zoom: 69%;
+    }
+}
+
+@media (width <= 80rem) {
+    main {
+        zoom: 60%;
+    }
+}
